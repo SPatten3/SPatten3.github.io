@@ -1,7 +1,7 @@
 title: Spencer Patten
 email: spencer.patten@hotmail.com
-description: >- 
-This site serves as a hub for the work of Spencer Patten
+description: >- This site serves as a hub for the work of Spencer Patten
+
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://spatten3.github.io/" # the base hostname & protocol for your site
