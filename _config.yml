@@ -1,12 +1,7 @@
-title: Spencer Patten
-email: spencer.patten@hotmail.com
-description: >- This site serves as a hub for the work of Spencer Patten
-
-
+title: My Website
+description: "Welcome to my website!"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://spatten3.github.io/" # the base hostname & protocol for your site
-github_username:  SPatten3
+url: "https://SPatten3.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-theme: minimal
