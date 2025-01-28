@@ -1,0 +1,7 @@
+---
+title: "index"
+---
+
+## Welcome to my website! 
+
+Use the above tabs to navigate to the things I'm showing off. These will one day include my resume, examples of projects I've works on that I'm proud of, and undergrad research I have been a a part of.
