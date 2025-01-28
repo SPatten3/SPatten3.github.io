@@ -1,34 +1,26 @@
-<!-- _layouts/default.html -->
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  <!-- other head elements -->
 </head>
 <body>
   <header>
     <nav>
-      <h1>{{ site.navbar.title }}</h1>
       <ul>
-        {% for item in site.navbar.items %}
-          <li>
-            <a href="{{ /SPatten_Semester_Project.html }}">{{ place 1 }}</a>
-            {% if item.subitems %}
-              <ul>
-                {% for subitem in item.subitems %}
-                  <li><a href="{{ /SPatten_Semester_Project.html }}">{{ place 2 }}</a></li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/SPatten_Semester_Project.html' | relative_url }}">Freshman Project</a></li>
+
+        <!--    
+        <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/blog.html' | relative_url }}">Blog</a></li>
+       Add more links as needed 
+       --> 
       </ul>
     </nav>
   </header>
+  
   <!-- Other content sections -->
-  {{ content }}
+  
 </body>
 </html>
