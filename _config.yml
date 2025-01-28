@@ -1,26 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <!-- other head elements -->
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/SPatten_Semester_Project.html' | relative_url }}">Freshman Project</a></li>
+title: Spencer Patten
+email: spencer.patten@hotmail.com
+description: >- 
+This site serves as a hub for the work of Spencer Patten
 
-        <!--    
-        <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
-        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
-        <li><a href="{{ '/blog.html' | relative_url }}">Blog</a></li>
-       Add more links as needed 
-       --> 
-      </ul>
-    </nav>
-  </header>
-  
-  <!-- Other content sections -->
-  
-</body>
-</html>
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://spatten3.github.io/" # the base hostname & protocol for your site
+github_username:  SPatten3
+
+# Build settings
+markdown: kramdown
+theme: minimal
