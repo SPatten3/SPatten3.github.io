@@ -1,0 +1,14 @@
+navbar:
+  title: "Wow does this work?"
+  left:
+    - text: "Portfolio"
+      menu:
+        - text: "Polyg"
+          href: file:///C:/Users/spenc/OneDrive/Documents/Files%20for%20R/Personal%20Projects/JS%20Polygamy/Polyg.html
+
+output: 
+  html_document:
+    theme: flatly
+    toc: yes
+    toc_float:
+      collapsed: true
