@@ -1,7 +1,0 @@
-title: My Website
-description: "Welcome to my website!"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://SPatten3.github.io" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
