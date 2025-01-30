@@ -1,0 +1,7 @@
+---
+title: "Spencer Patten"
+---
+
+This is the index file for my website
+
+
