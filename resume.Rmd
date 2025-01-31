@@ -1,9 +1,240 @@
 ---
-title: "resume"
-output: html_document
+title: ""
 ---
 
+<br />
 
-My resume will go here
+# Resume {.tabset .tabset-pills}
+
+<br />
+
+## Education
+
+<br />
+
+<div style="float:left">
+
+### Brigham Young University - Idaho
+
+<div style="color:gray">
+
+**B.S. of Psychology**
+
+* Major Emphasis: Industrial Organizational Psychology
+
+* Minor: Statistics
+
+* Certificate: Human Resources Management
+
+Vice President: BYU-Idaho Firm Foundations
+
+</div>
+</div>
+
+<div style="float:right;color:gray;text-align:right">
+
+<br />
+
+2023 - 2027
+
+GPA: 3.8
+
+</div>
+
+<div style="clear:both;"></div>
 
 
+<br />
+
+<div style="float:left">
+
+### Rogers Senior High School
+
+<div style="color:gray">
+
+**High School Diploma**
+
+</div>
+
+</div>
+
+<div style="float:right;color:gray;align:right">
+
+<br />
+
+Class of 2021
+
+</div>
+
+<div style="clear:both;"></div>
+
+## Work Experience
+
+<div style="float:left">
+
+<br />
+
+### BYU-Idaho Study Skills Center
+
+<div style="color:gray">
+
+**Academic Skills Coach**
+
+* 
+
+* 
+
+* 
+
+**Team Leader**
+
+* 
+
+* 
+
+* 
+
+</div>
+
+</div>
+
+<div style="float:right;color:gray;text-align:right">
+
+<br />
+
+<br />
+
+Rexburg, ID
+
+2024 - Present
+
+</div>
+
+<div style="clear:both;"></div>
+
+<div style="float:left">
+
+<br />
+
+### Northway Academy
+
+<div style="color:gray">
+
+**Behavior Technician**
+
+* 
+
+* 
+
+* 
+
+
+</div>
+
+</div>
+
+<div style="float:right;color:gray;text-align:right">
+
+<br />
+
+<br />
+
+Elk River, MN
+
+2024
+
+</div>
+
+<div style="clear:both;"></div>
+
+<div style="float:left">
+
+<br />
+
+### C&J Relocation Services
+
+<div style="color:gray">
+
+**Crew Member**
+
+* 
+
+* 
+
+* 
+
+
+</div>
+
+</div>
+
+<div style="float:right;color:gray;text-align:right">
+
+<br />
+
+<br />
+
+
+Cambridge, MN
+
+
+</div>
+
+<div style="clear:both;"></div>
+
+## Skills
+
+<br />
+
+**RStudio**
+
+* Data Visualization with GGPlot2 and Plotly
+
+* Data wrangling with DPLYR and Base R functions
+
+* Generating Statistical Analyses
+
+* Managing a github pages webiste from within RStudio
+
+## Volunteer Experience
+
+
+<!-- TEMPLATE FOR NEW SECTIONS
+
+
+<div style="float:left">
+
+### Name of the Section 
+
+<br />
+
+<div style="color:gray">
+
+--- Main Body Text (left aligned) ---
+
+
+
+
+
+
+--- End Main Body Text ---
+
+</div>
+
+</div>
+
+<div style="float:right;color:gray;text-align:right">
+
+<br />
+
+--- Informative Text (right aligned)---
+
+
+
+--- End Informative Text ---
+
+</div>
+
+<div style="clear:both;"></div>
+
+-->

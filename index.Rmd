@@ -1,6 +1,5 @@
 ---
-title: "Spencer Patten"
-output: html_document
+title: ""
 ---
 
 This is the index file for my website
