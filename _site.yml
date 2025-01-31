@@ -1,6 +1,6 @@
 name: "SPatten3.github.io"
 navbar:
-  title: "Spencer's Website"
+  title: "<img src='SP.png' style='height: 60px; margin: -20px 0px'>"
   left:
     - text: "My Resume"
       href: resume.html

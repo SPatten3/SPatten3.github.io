@@ -16,24 +16,8 @@ title: ""
 
 ### Brigham Young University - Idaho
 
-<div style="color:gray">
-
-**B.S. of Psychology**
-
-* Major Emphasis: Industrial Organizational Psychology
-
-* Minor: Statistics
-
-* Certificate: Human Resources Management
-
-Vice President: BYU-Idaho Firm Foundations
-
-</div>
-</div>
 
 <div style="float:right;color:gray;text-align:right">
-
-<br />
 
 2023 - 2027
 
@@ -41,10 +25,45 @@ GPA: 3.8
 
 </div>
 
+
+<div style="color:gray;width:75%">
+
+**Bachelor of Science: Psychology**
+
+* Major Emphasis: Industrial Organizational Psychology
+
+* Minor: Statistics
+
+* Certificate: Human Resources Management
+
+**Vice President: BYU-Idaho Firm Foundations Society**
+
+* Guiding and instructing members in use of the Socratic method of inquiry, historical-critical method, and other processes applied to religious and philosophical questions
+
+* Participating in a leadership council to make goals and plans regarding societal growth
+
+* Presiding at and conducting meetings, including presenting, leading discussions, and introducing guest speakers
+
+**Member: Students Promoting Industrial Organizational Psychology**
+
+</div>
+</div>
+
 <div style="clear:both;"></div>
 
+<br />
+
+<div style="float:right;color:gray;text-align:right">
 
 <br />
+
+Class of 2021
+
+</div>
+
+
+<div style="color:gray;width:75%">
+
 
 <div style="float:left">
 
@@ -58,14 +77,6 @@ GPA: 3.8
 
 </div>
 
-<div style="float:right;color:gray;align:right">
-
-<br />
-
-Class of 2021
-
-</div>
-
 <div style="clear:both;"></div>
 
 ## Work Experience
@@ -76,7 +87,15 @@ Class of 2021
 
 ### BYU-Idaho Study Skills Center
 
-<div style="color:gray">
+<div style="float:right;color:gray;text-align:right">
+
+January 2024 - Present
+
+Rexburg, ID
+
+</div>
+
+<div style="color:gray;width:75%">
 
 **Academic Skills Coach**
 
@@ -98,17 +117,6 @@ Class of 2021
 
 </div>
 
-<div style="float:right;color:gray;text-align:right">
-
-<br />
-
-<br />
-
-Rexburg, ID
-
-2024 - Present
-
-</div>
 
 <div style="clear:both;"></div>
 
@@ -118,7 +126,17 @@ Rexburg, ID
 
 ### Northway Academy
 
-<div style="color:gray">
+
+
+<div style="float:right;color:gray;text-align:right">
+
+May - September 2024
+
+Elk River, MN
+
+</div>
+
+<div style="color:gray;width:75%">
 
 **Behavior Technician**
 
@@ -128,20 +146,7 @@ Rexburg, ID
 
 * Implemented individualized guidance with clients in daily living skills to establish independence
 
-
 </div>
-
-</div>
-
-<div style="float:right;color:gray;text-align:right">
-
-<br />
-
-<br />
-
-Elk River, MN
-
-2024
 
 </div>
 
@@ -153,7 +158,15 @@ Elk River, MN
 
 ### C&J Relocation Services
 
-<div style="color:gray">
+<div style="float:right;color:gray;text-align:right">
+
+June - October 2021
+
+Cambridge, MN
+
+</div>
+
+<div style="color:gray;width:75%">
 
 **Crew Member**
 
@@ -163,21 +176,7 @@ Elk River, MN
 
 * Transported client belongings to and from trailer using straps, harnesses, and hand trucks to ensure 100% safety during handling
 
-
 </div>
-
-</div>
-
-<div style="float:right;color:gray;text-align:right">
-
-<br />
-
-<br />
-
-2022, 2024
-
-Cambridge, MN
-
 
 </div>
 
@@ -198,6 +197,34 @@ Cambridge, MN
 * Managing a github pages webiste from within RStudio
 
 ## Volunteer Experience
+
+<br />
+
+### Full Time Missionary: The Church of Jesus Christ of Latter-day Saints
+
+<div style="float:right;color:gray;text-align:right">
+
+October 2021 - October 2023
+
+Northern Utah
+
+</div>
+
+<div style="color:gray;width:75%">
+
+* Acted as an ordained minister, specializing in teaching from scriptures and supporting individual growth through 20 to 25 teaching appointments per week
+
+* Offering humanitarian aid through service at non-profit welfare organizations and personalized service projects at least once a week
+
+* Supervised volunteer efforts by analyzing key indicators of performance and engaging 
+
+* Counseling with volunteer and local ecclesiastical leaders on a weekly basis in order to improve effectiveness and performance
+
+</div>
+
+</div>
+
+<div style="clear:both;"></div>
 
 
 <!-- TEMPLATE FOR NEW SECTIONS
