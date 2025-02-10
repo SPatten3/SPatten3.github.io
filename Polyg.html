@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Spencer Patten" />
+
+
+<title>Analyzing Trends within Joseph Smith’s Polygamy</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src='SP.png' style='height: 60px; margin: -20px 0px'></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="resume.html">My Resume</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Statistics Portfolio
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Polyg.html">Analyzing Joseph Smith's Polygamy</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Analyzing Trends within Joseph Smith’s
+Polygamy</h1>
+<h4 class="author">Spencer Patten</h4>
+
+</div>
+
+
+<p><br /></p>
+<div id="background" class="section level2">
+<h2>Background</h2>
+<p>As a member of the Church of Jesus Christ of Latter-day Saints
+(a.k.a. LDS Church or the Church), I often hear criticism of my faith’s
+theology and history. I typically suspend my acceptance of such claims
+until I perform my own research. One of the more common attacks is
+regarding the character of the Church’s founder, Joseph Smith. Smith
+claimed that God commanded him to institute the practice of plural
+marriage, meaning the marrying of more than one wife. He often comes
+under fire for this. For instance, it is assumed that each plural
+marriage was treated as a typical marriage and were consummated.</p>
+<p>Thanks to the work of LDS and Non-LDS historians, we have a pretty
+good idea with what happened in most of these plural marriages. Using
+this historical data, we can assess different questions about Joseph
+Smith’s Polygamy. By doing so, I hope first and foremost to uncover the
+truth. I have the firm hope that the truth will show that Smith was a
+reputable man, free from hypocrisy and acting within his cultural
+context. Should the evidence indicate sexual immorality,</p>
+</div>
+<div id="index" class="section level2 tabset tabset-pills tabset-fade"
+style="height:400px">
+<h2 class="tabset tabset-pills tabset-fade">Structure and
+Methodology</h2>
+<div id="primary-question" class="section level3">
+<h3>Primary Question</h3>
+<p>The analysis will seek to answer the primary question:</p>
+<p><strong>“Did Joseph Smith engage in questionable or inappropriate
+actions through the practice of polygamy?”</strong></p>
+<p>Six tertiary questions will be analyzed by a visualization tools such
+as a tables, bar charts, or density plots. If the visualizations leave
+any questions, a statistical test such as a t test will be used to
+further understand the truth. When answering each question, Smith will
+be assumed innocent (i.e. within the law, adhering to societal norms,
+etc.) until there is sufficient evidence to suggest otherwise.</p>
+<p>Because more than one statistical test will be performed, Bonferoni’s
+method of test correction will be applied to lower the risk of type 1
+error. Significance levels will be adjusted accordingly.</p>
+</div>
+<div id="outline" class="section level3">
+<h3>Outline</h3>
+<p>In pursuit of an answer to this question, the following tertiary
+questions will be asked :</p>
+<ul>
+<li><p><a href="#pedo">Are any of Joseph Smith’s sexual relations
+consistent with pedophilia?</a></p></li>
+<li><p><a href="#emma">Did Smith hide sexual realtionships from his
+first wife, Emma?</a></p></li>
+<li><p><a href="#type">What is the relationship between the type of
+sealing and evidence of sexuality?</a></p></li>
+<li><p><a href="#law">Despite the illegality of polygamy, was Smith
+otherwise within local marriage laws?</a></p></li>
+<li><p><a href="#age">How do the ages of his brides compare to
+contemporary marriage trends?</a></p></li>
+<li><p><a href="#diff">How do the age difference between him and his
+wives compare to contemporary trends?</a></p></li>
+</ul>
+<p><br /></p>
+</div>
+<div id="data-sources" class="section level3">
+<h3>Data Sources</h3>
+<p>Historical data such as the names, ages, and other factors was
+sourced from the work of Brian Hales. Observational data including the
+strength of any evidence of sexual relations were not the author’s, but
+sourced from the work of Brian Hales. The author reviewed the primary
+and secondary historical evidences to determine whether Emma Smith was
+aware of the plural marriages. All data regarding Joseph Smith’s
+Polygamy was sourced from the various pages on Brian Hales’ website, <a
+href="josephsmithspolygamy.org">josephsmithspolygamy.org</a>.</p>
+<p>Data used from the 1850 US census was retrieved from the IPUMS
+database<a href="#fn1" class="footnote-ref"
+id="fnref1"><sup>1</sup></a>. The data set used was a random sample of
+census records totaling 1% of the US population surveyed.</p>
+<p><br /></p>
+</div>
+<div id="definition-of-pedophilia" class="section level3">
+<h3>Definition of Pedophilia</h3>
+<p>Because one of the questions being asked regards Smith showing
+pedophilic tendencies, the term will be defined. Dictionaries
+contemporary to Smith do not have the term, therefore a modern
+definition will be used. This analysis will not seek to officially
+diagnose anyone with any mental disorders. Any conclusions regarding
+such will be, at most, observations regarding trends in the historical
+record. For purposes of the analysis, a synthesis of the definitions
+provided by the American Psychological Association and the American
+Psychiatric Association for pedophilia will be used as the strictest
+definition.</p>
+<p>According to the American Psychological Association, pedophilia is “a
+paraphilia in which sexual acts or fantasies involving prepubertal
+children are the persistently preferred or exclusive method of achieving
+sexual excitement<a href="#fn2" class="footnote-ref"
+id="fnref2"><sup>2</sup></a>.” The Diagnostic and Statistical Manual of
+Mental Health Disorders, published by the American Psychiatric
+Association, adds that the sexual acts or fantasies are “with a
+prepubescent child or children (generally age 13 years or younger)<a
+href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.”</p>
+<p>Taking a looser definition based on these criteria, the established
+definition of pedophilia for this analysis will be, “any stand-alone or
+repeated sexual relations with an individual or individuals below the
+age of sixteen.” The intention behind expanding this definition is to
+fit the definition within the moral intuitions and sensibilities of the
+broader public.</p>
+</div>
+</div>
+<div id="trends-within-smiths-marriages" class="section level2">
+<h2>Trends within Smith’s Marriages</h2>
+<p>With the data gathered, inferences and conclusions can be drawn when
+we cross reference data such as type of sealing, historical evidence of
+sexuality, the knowledge that his first wife, Emma, had, and such.</p>
+<p><br /></p>
+<div id="pedo" class="section level3 tabset tabset-pills tabset-fade">
+<h3 class="tabset tabset-pills tabset-fade">Are any of Joseph Smith’s
+relations consistent with pedophilia?</h3>
+<div style="height:400px;">
+<p>It is often and understandably inferred that two married individuals
+will engage in sexual relations at some point. When it is learned that
+Smith had several wives under 18, inferences such as this cause many to
+assume he was having sexual relations with all of them.</p>
+<div id="table" class="section level4">
+<h4>Table</h4>
+<p>The following table shows relevant data for each level of historical
+evidence for sexual relations.</p>
+<table style="width:92%;">
+<colgroup>
+<col width="16%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="20%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Ev of Sex</th>
+<th align="center">Min Age</th>
+<th align="center">Avg Age</th>
+<th align="center">Max Age</th>
+<th align="center">Avg Age Diff</th>
+<th align="center">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">None</td>
+<td align="center">14</td>
+<td align="center">34.6</td>
+<td align="center">58</td>
+<td align="center">1.9</td>
+<td align="center">23</td>
+</tr>
+<tr class="even">
+<td align="center">Weak</td>
+<td align="center">19</td>
+<td align="center">28.7</td>
+<td align="center">43</td>
+<td align="center">6</td>
+<td align="center">3</td>
+</tr>
+<tr class="odd">
+<td align="center">Moderate</td>
+<td align="center">17</td>
+<td align="center">22.8</td>
+<td align="center">30</td>
+<td align="center">13.8</td>
+<td align="center">5</td>
+</tr>
+<tr class="even">
+<td align="center">Strong</td>
+<td align="center">17</td>
+<td align="center">19.2</td>
+<td align="center">22</td>
+<td align="center">14</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+<p>The data suggests that there is no evidence that Smith engaged in
+sexual relations with anyone under the age of 17. It does appear that
+younger wives than average appear in the moderate and strong categories.
+Trends of <a href="#age">age</a> and <a href="#diff">age difference</a>
+among his plural wives are further analyzed below.</p>
+</div>
+<div id="conclusion" class="section level4">
+<h4>Conclusion</h4>
+<p>Given the <a href="#index">definition of pedophilia</a> set forth,
+there is insufficient evidence to adopt the view that Smith had
+pedophilic tendencies. There is no evidence that Smith met the criteria
+of a pedophile.</p>
+<p>Further study into the historical data can provide insight on a case
+by case basis. For more information on the issue of Smith’s sealings to
+young bride, <a
+href="https://josephsmithspolygamy.org/common-questions/14-year-old-wives-teenage-brides/">this
+article</a> is highly recommended.</p>
+</div>
+</div>
+</div>
+<div id="emma" class="section level3 tabset tabset-pills tabset-fade">
+<h3 class="tabset tabset-pills tabset-fade">Did Smith hide sexual
+realtionships from his first wife, Emma?</h3>
+<p>Especially during the early days of his practice of plural marriage,
+Smith’s first wife Emma Hale was not made aware of the sealings he was
+entering into. This has been pointed to as a betrayal of trust on
+Smith’s part. The complex issue deserves historical analysis, but there
+may be lessons to be learned from the statistics.</p>
+<div style="height:450px;">
+<div id="table-1" class="section level4">
+<h4>Table</h4>
+<p>The following table will show Emma’s awareness of his marriages
+across different levels of evidence of sexuality.</p>
+<p>Please note that the historical record is unclear about which
+marriages Emma had prior knowledge of.</p>
+<table style="width:51%;">
+<caption>Joseph Smith was transparent about sealings with sexual
+relations</caption>
+<colgroup>
+<col width="16%" />
+<col width="20%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Ev of Sex</th>
+<th align="center">Emma Knew of</th>
+<th align="center">Avg Age</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">None</td>
+<td align="center">2 / 23</td>
+<td align="center">34.6</td>
+</tr>
+<tr class="even">
+<td align="center">Weak</td>
+<td align="center">0 / 3</td>
+<td align="center">28.7</td>
+</tr>
+<tr class="odd">
+<td align="center">Moderate</td>
+<td align="center">4 / 5</td>
+<td align="center">22.8</td>
+</tr>
+<tr class="even">
+<td align="center">Strong</td>
+<td align="center">3 / 3</td>
+<td align="center">18.3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="conclusion-1" class="section level4">
+<h4>Conclusion</h4>
+<p>While Smith was not fully transparent with his first wife regarding
+each and every plural wife, the historical data suggests that Emma was
+aware of the vast majority of relationships where sexuality was possibly
+occurring. The trends suggest that Smith was not hiding sexual
+relationships from his first wife.</p>
+<p>With that said, elsewhere there is evidence that Emma had difficulty
+accepting the practice of polygamy. For more information on the subject,
+<a
+href="https://josephsmithspolygamy.org/history/emma-smith-struggles/">this
+article</a> is highly recommended.</p>
+</div>
+</div>
+</div>
+<div id="type" class="section level3 tabset tabset-pills tabset-fade">
+<h3 class="tabset tabset-pills tabset-fade">What is the relationship
+between the type of sealing and evidence of sexuality?</h3>
+<p>Today in the LDS Church, the only sealings performed for the living
+are time-and-eternity sealings. That is, a man and a wife are joined in
+union for the rest of this life as well as in the next life. However, in
+the early days of the church, this was not solely the case. Sealings
+could be performed for time, time-and-eternity, or eternity.</p>
+<div style="height:650px;">
+<div id="graph" class="section level4">
+<h4>Graph</h4>
+<p>Sealings involving time would be treated as legal marriages are, but
+eternity-only sealings would not. Given the LDS Church’s consistency in
+teaching that sexual relations be within marriage, evidence that Smith
+engaged in sexual relations within eternity-only sealings would imply
+hypocrisy.</p>
+<p>The following graph will display the evidence of sexuality, grouped
+by the types of sealings.</p>
+<p><img src="Polyg_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="conclusion-2" class="section level4">
+<h4>Conclusion</h4>
+<p>As type of sealing and historical evidence of sexuality are
+juxtaposed, it becomes clear that the only relationships with stronger
+evidence of sexuality (moderate to strong) were those which were treated
+as legal marriages. Thus, there is enough evidence to conclude that
+Smith was not violating the principles he taught and enforced.</p>
+<p>It is likely that Smith viewed Time and Eternity sealings as being
+legitimate marriages. Thus, he did withing those relationships what
+married people do.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="comparison-to-contemporary-trends" class="section level2">
+<h2>Comparison to Contemporary Trends</h2>
+<p>While modern moral sensibilities are violated when and adult man is
+said to have slept with a teenager, the past is akin to a different
+country. A comparison of social trends in Smith’s day may yield insight
+into any deviance from modern trends.</p>
+<p><br /></p>
+<div id="law" class="section level3 tabset tabset-pills tabset-fade">
+<h3 class="tabset tabset-pills tabset-fade">Despite the illegality of
+polygamy, was Smith otherwise within local marriage laws?</h3>
+<p>The accusations that Smith was a pedophile primarily revolve around
+his being sealed to 14 year old name Helen Mar Kimball. More on that can
+be learned in <a
+href="https://josephsmithspolygamy.org/plural-wives-overview/helen-mar-kimball/">this
+article</a>. If Smith’s marriages showed to be outside of Illinois
+marriage laws, this would raise questions on his motives.</p>
+<div style="height:500px;">
+<div id="table-2" class="section level4">
+<h4>Table</h4>
+<p>While the Church was in Illinois, the marriage laws stated that with
+parental consent, anyone female as young as 14 years old female was able
+to be married<a href="#fn4" class="footnote-ref"
+id="fnref4"><sup>4</sup></a>. Without parental consent, a female must
+have been 18 or older. While laws have changed much since then, in those
+days, it would have been legal if Smith had permission from the
+parents.</p>
+<p>The following table lists each of Smith’s plural wives under the age
+of 18. Stated is the sufficiency of the evidence to conclude that a
+legal guardian other than Smith gave approval for the plural
+marriage.</p>
+<table style="width:86%;">
+<colgroup>
+<col width="30%" />
+<col width="8%" />
+<col width="30%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th align="center">Age</th>
+<th align="center">Consent of Guardian</th>
+<th align="center">Ev of Sex</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flora Ann Woodworth</td>
+<td align="center">16</td>
+<td align="center">Yes</td>
+<td align="center">None</td>
+</tr>
+<tr class="even">
+<td>Helen Mar Kimball</td>
+<td align="center">14</td>
+<td align="center">Yes</td>
+<td align="center">None</td>
+</tr>
+<tr class="odd">
+<td>Lucy Walker</td>
+<td align="center">17</td>
+<td align="center">Yes</td>
+<td align="center">Strong</td>
+</tr>
+<tr class="even">
+<td>Sarah Ann Whitney</td>
+<td align="center">17</td>
+<td align="center">Yes</td>
+<td align="center">None</td>
+</tr>
+<tr class="odd">
+<td>Sarah Lawrence</td>
+<td align="center">17</td>
+<td align="center">Yes</td>
+<td align="center">Moderate</td>
+</tr>
+</tbody>
+</table>
+<p>The table clearly shows that each bride under 18 had consent from a
+guardian.</p>
+</div>
+<div id="conclusion-3" class="section level4">
+<h4>Conclusion</h4>
+<p>While he was not necessarily bound by Illinois law (they were not
+legally recognized marriages), it appears that Smith fully respected the
+law. The adherence to the law indicates an awareness of his present
+social norms.</p>
+<p>Furthermore, it can be inferred that, because Smith was withing the
+law, he was conscious of it and trying to keep it.</p>
+</div>
+</div>
+</div>
+<div id="age" class="section level3 tabset tabset-pills tabset-fade">
+<h3 class="tabset tabset-pills tabset-fade">How do the ages of his
+brides compare to contemporary marriage trends?</h3>
+<p>In the 1850 US Census, citizens were asked if they had gotten married
+within the past year. Filtering everyone who said yes and who was female
+will show a contemporary spread of marriage ages. If the ages of Smith’s
+wives are significantly less than the norm, it may be concluded that
+Smith disproportionately targeted young women. This, paired with any
+other deviations in rends, could count towards evidence that Smith used
+his power to acquire sexual satisfaction.</p>
+<div style="height:700px;">
+<div id="graph-1" class="section level4">
+<h4>Graph</h4>
+<p>To approach an answer, the distributions will first be visualized
+using a density plot.</p>
+<p><img src="Polyg_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>While both of the distributions appear right skewed, Central Limit
+Theorem indicates that, since the 1850 Census is well over 30, it can be
+taken to be representative of the population.</p>
+</div>
+<div id="table-3" class="section level4">
+<h4>Table</h4>
+<table style="width:94%;">
+<caption>Summary Statistics: Female Ages at Marriage</caption>
+<colgroup>
+<col width="20%" />
+<col width="8%" />
+<col width="12%" />
+<col width="13%" />
+<col width="8%" />
+<col width="11%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">group</th>
+<th align="center">Min</th>
+<th align="center">Median</th>
+<th align="center">Average</th>
+<th align="center">Max</th>
+<th align="center">SD</th>
+<th align="center">Sample Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1850 Couples</td>
+<td align="center">13</td>
+<td align="center">21</td>
+<td align="center">22.76</td>
+<td align="center">66</td>
+<td align="center">6.855</td>
+<td align="center">935</td>
+</tr>
+<tr class="even">
+<td align="center">JS Polygamy</td>
+<td align="center">14</td>
+<td align="center">30</td>
+<td align="center">30.63</td>
+<td align="center">58</td>
+<td align="center">12.41</td>
+<td align="center">35</td>
+</tr>
+</tbody>
+</table>
+<p>The summary statistics table highlights that Smith’s plural wives had
+a higher median and average age relative to to contemporary marriage
+ages. The higher standard deviation also indicates the data to be more
+spread out.</p>
+</div>
+<div id="statistical-test-and-conclusion" class="section level4">
+<h4>Statistical Test and Conclusion</h4>
+<p>Despite the antagonists claiming Smith targeted younger women,
+because of the implications of the visualization and the table, the
+hypothesis tested will be the opposite.</p>
+<p>The assumption (<span class="math inline">\(H_o\)</span> or null
+hypothesis) is that there will not be significant differences between
+the averages (<span class="math inline">\(\mu\)</span> or mean) the two
+group.</p>
+<p><span class="math display">\[
+H_o: \mu_\text{Avg Age of 1850 Wives} = \mu_\text{Avg Age of JS Plural
+Wives}
+\]</span></p>
+<p>The prediction (<span class="math inline">\(H_a\)</span> or
+alternative hypothesis) is that the average marriage age of 1850 women
+is less that the average marriage age of Smith’s plural wives.</p>
+<p><span class="math display">\[
+H_a: \mu_\text{Avg Age of 1850 Wives} &lt; \mu_\text{Avg Age of JS
+Plural Wives}
+\]</span></p>
+<p>A confidence level of 97.5% will be used, and thus a significance of
+0.025 will be needed to accept the alternative hypothesis. A p value
+below the significance (<span class="math inline">\(p &lt;
+0.025\)</span>) will result in accepting <span
+class="math inline">\(H_a\)</span>.</p>
+<table style="width:94%;">
+<caption>Two Sample T-test: Smith’s wives significantly older than norm
+(continued below)</caption>
+<colgroup>
+<col width="23%" />
+<col width="11%" />
+<col width="25%" />
+<col width="34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Test statistic</th>
+<th align="center">df</th>
+<th align="center">P value</th>
+<th align="center">Alternative hypothesis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">-3.732</td>
+<td align="center">34.78</td>
+<td align="center">0.0003384 * * *</td>
+<td align="center">less</td>
+</tr>
+</tbody>
+</table>
+<table style="width:81%;">
+<colgroup>
+<col width="40%" />
+<col width="40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">mean in group 1850 Couples</th>
+<th align="center">mean in group JS Polygamy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">22.76</td>
+<td align="center">30.63</td>
+</tr>
+</tbody>
+</table>
+<p>The test statistic indicates that the female’s marriage ages in the
+1850s sample mean are roughly 3.7 standard deviations less than mean of
+the ages of Smith’s plural wives. This tells of a large difference in
+the two groups. With the prediction that it would be smaller, P value
+indicates that the probability of seeing such a difference is about
+.0003384. This means our observed values are <em>highly</em>
+improbable.</p>
+<p>Because <span class="math inline">\(p &lt; 0.025\)</span>, it appears
+that, in stark contrast to the critic’s claims, there is sufficient
+evidence to reject the null hypothesis. Thus, in accepting the
+alternative, it is realized that Smith’s plural wives were significantly
+older than contemporary trends.</p>
+</div>
+</div>
+</div>
+<div id="diff" class="section level3 tabset tabset-pills tabset-fade">
+<h3 class="tabset tabset-pills tabset-fade">How do the age difference
+between him and his wives compare to contemporary trends?</h3>
+<p>Taking the average age individuals of both sexes were married in
+1850, we can compare this to the same in Smith’s marriages. If the
+difference were significantly less than the societal norm, it would be
+assumed that Smith was violating the norm consistently.</p>
+<p>As a note, these values represent averages. While, on a case by
+basis, deviation will likely be found, the comparison of the averages
+will show how this fits across Smith’s entire range of marriages.</p>
+<div style="height:700px;">
+<div id="graph-2" class="section level4">
+<h4>Graph</h4>
+<p>To approach an answer, the distributions will first be visualized
+using a density plot. Remember, the wife’s ages was subtracted from the
+husband’s, so a positive values indicate an older husband and a negative
+an older wife.</p>
+<p><img src="Polyg_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>The distributions seems slightly skewed, and it definitely appears as
+though Smith trended toward having larger age gaps that within his
+plural marriages than what was generally seen.</p>
+</div>
+<div id="table-4" class="section level4">
+<h4>Table</h4>
+<p>The following table will give a overview of the summary statistics of
+the two samples.</p>
+<table style="width:94%;">
+<caption>Summary Statistics: Age Differences Among Couples</caption>
+<colgroup>
+<col width="20%" />
+<col width="8%" />
+<col width="12%" />
+<col width="13%" />
+<col width="8%" />
+<col width="11%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Group</th>
+<th align="center">Min</th>
+<th align="center">Median</th>
+<th align="center">Average</th>
+<th align="center">Max</th>
+<th align="center">SD</th>
+<th align="center">Sample Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1850 Couples</td>
+<td align="center">-18</td>
+<td align="center">4</td>
+<td align="center">5.037</td>
+<td align="center">40</td>
+<td align="center">6.115</td>
+<td align="center">935</td>
+</tr>
+<tr class="even">
+<td align="center">JS Polygamy</td>
+<td align="center">-21</td>
+<td align="center">7</td>
+<td align="center">5.343</td>
+<td align="center">23</td>
+<td align="center">12.34</td>
+<td align="center">35</td>
+</tr>
+</tbody>
+</table>
+<p>It would appear that, while the median is noticeable higher, the
+average age difference is very similar. This differences of the means
+and medians support the data being somewhat skewed. Given the larger
+standard deviation, the age gap in Smith’s marriages varies more widely
+than contemporary trends.</p>
+</div>
+<div id="hypothesis-testing" class="section level4">
+<h4>Hypothesis Testing</h4>
+<p>Our assumption (<span class="math inline">\(H_o\)</span> or null
+hypothesis) will be that there is no significant difference in the
+average age difference of Smith’s plural marriages and other
+contemporary couples.</p>
+<p><span class="math display">\[
+H_o: \mu_\text{Avg Age diff / 1850 Marriages} = \mu_\text{Avg Age diff /
+JS Plural Marriages}
+\]</span></p>
+<p>Given the graphic and table, our prediction (<span
+class="math inline">\(H_a\)</span> or alternative hypothesis) will
+mirror that of the critics, being that the age gap in Smith’s plural
+marriages is greater than that of contemporary couples.</p>
+<p><span class="math display">\[
+H_a: \mu_\text{Avg Age diff / 1850 Marriages} &lt; \mu_\text{Avg Age
+diff / JS Plural Marriages}
+\]</span></p>
+<p>A confidence level of 97.5% will be used, and thus a significance of
+0.025 will be needed to accept the alternative hypothesis. A p value
+below the significance (<span class="math inline">\(p &lt;
+0.025\)</span>) will result in accepting <span
+class="math inline">\(H_a\)</span>.</p>
+<table style="width:83%;">
+<caption>Two Sample T-test: Age gaps not significantly different
+(continued below)</caption>
+<colgroup>
+<col width="23%" />
+<col width="11%" />
+<col width="13%" />
+<col width="34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Test statistic</th>
+<th align="center">df</th>
+<th align="center">P value</th>
+<th align="center">Alternative hypothesis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">-0.1458</td>
+<td align="center">34.63</td>
+<td align="center">0.4425</td>
+<td align="center">less</td>
+</tr>
+</tbody>
+</table>
+<table style="width:81%;">
+<colgroup>
+<col width="40%" />
+<col width="40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">mean in group 1850 Couples</th>
+<th align="center">mean in group JS Polygamy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">5.037</td>
+<td align="center">5.343</td>
+</tr>
+</tbody>
+</table>
+<p>The test statistic indicates that the age differences in the 1850s
+sample mean are roughly .15 standard deviations less than mean of
+Smith’s age difference to his plural wives. This means that only a small
+difference between the two groups is observed. The p value indicates
+that the probability of seeing this is .44, which is fairly high.</p>
+<p>Because <span class="math inline">\(p &gt; 0.025\)</span>, we fail to
+reject the null hypothesis. There is insufficient evidence to support
+the critics’ claims that Smith targeted disproportionately young women
+based on the difference in their marriages.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="analysis-conclusion" class="section level2">
+<h2>Analysis Conclusion</h2>
+<p>In conclusion, across the six tertiary questions asked, there is only
+one instance of Smith departing from societal norms or having
+questionable practices. This involved the fact that there is sufficient
+evidence to conclude that Smith’s plural wives were, on average,
+significantly older when married to Smith than would be expected.</p>
+<p>Thus, I conclude that Smith did not use polygamy as a way to justify
+and engage in questionable or inappropriate actions.</p>
+<p>While the practice of polygamy in the United States was unusual then
+and still is now, Smith seem to have stayed within the laws he set forth
+as a religious leader, withing local customs, and within the trust of
+those closest to him.</p>
+<p><br /></p>
+<p><br /></p>
+<p><br /></p>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>Steven Ruggles, Sarah Flood, Matthew Sobek, Daniel
+Backman, Annie Chen, Grace Cooper, Stephanie Richards, Renae Rodgers,
+and Megan Schouweiler. IPUMS USA: Version 15.0 [dataset]. Minneapolis,
+MN: IPUMS, 2024. <a href="https://doi.org/10.18128/D010.V15.0"
+class="uri">https://doi.org/10.18128/D010.V15.0</a><a href="#fnref1"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://dictionary.apa.org/pedophilia">APA on
+Defining Pedophilia</a><a href="#fnref2"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><a
+href="https://www.mredscircleoftrust.com/storage/app/media/DSM%205%20TR.pdf#page=1052">DSM-V
+on Pedophilia</a><a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a
+href="https://www.chipublib.org/blogs/post/who-can-i-marry-a-chicago-history-2/">llinois
+Historical Marriage Laws</a><a href="#fnref4"
+class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

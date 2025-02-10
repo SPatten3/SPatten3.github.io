@@ -4,6 +4,10 @@ navbar:
   left:
     - text: "My Resume"
       href: resume.html
+    - text: "Statistics Portfolio"
+      menu:
+        - text: "Analyzing Joseph Smith's Polygamy"
+          href: Polyg.html
 
 #  left:
 #    - text: "name of menu"
