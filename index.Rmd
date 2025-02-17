@@ -1,7 +1,0 @@
----
-title: ""
----
-
-This is the index file for my website
-
-
