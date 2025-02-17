@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>resume.knit</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src='SP.png' style='height: 60px; margin: -20px 0px'></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="resume.html">My Resume</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Statistics Portfolio
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Polyg.html">Analyzing Joseph Smith's Polygamy</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p><br /></p>
+<div id="resume" class="section level1 tabset tabset-pills tabset-fade">
+<h1 class="tabset tabset-pills tabset-fade">Resume</h1>
+<p><br /></p>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<p><br /></p>
+<div id="brigham-young-university---idaho" class="section level3"
+style="float:left">
+<h3>Brigham Young University - Idaho</h3>
+<div style="float:right;color:gray;text-align:right">
+<p>2023 - 2027</p>
+</div>
+<div style="color:gray;width:75%">
+<p><strong>Bachelor of Science: Psychology</strong></p>
+<ul>
+<li><p>Major Emphasis: Industrial Organizational Psychology</p></li>
+<li><p>Minor: Statistics</p></li>
+<li><p>Certificate: Human Resources Management</p></li>
+</ul>
+<p><strong>Vice President: BYU-Idaho Firm Foundations
+Society</strong></p>
+<ul>
+<li><p>Guiding and instructing members in use of the Socratic method of
+inquiry, historical-critical method, and other processes applied to
+religious and philosophical questions</p></li>
+<li><p>Participating in a leadership council to make goals and plans
+regarding societal growth</p></li>
+<li><p>Presiding at and conducting meetings, including presenting,
+leading discussions, and introducing guest speakers</p></li>
+</ul>
+<p><strong>Member: Students Promoting Industrial Organizational
+Psychology</strong></p>
+</div>
+</div>
+<div style="clear:both;">
+
+</div>
+<p><br /></p>
+<div style="float:right;color:gray;text-align:right">
+<p><br /></p>
+<p>Class of 2021</p>
+</div>
+<div id="rogers-senior-high-school" class="section level3"
+style="float:left;width:75%">
+<h3>Rogers Senior High School</h3>
+<div style="color:gray">
+<p><strong>High School Diploma</strong></p>
+</div>
+</div>
+<div style="clear:both;">
+
+</div>
+</div>
+<div id="work-experience" class="section level2">
+<h2>Work Experience</h2>
+<div style="float:left">
+<p><br /></p>
+<div id="byu-idaho-study-skills-center" class="section level3">
+<h3>BYU-Idaho Study Skills Center</h3>
+<div style="float:right;color:gray;text-align:right">
+<p>January 2024 - Present</p>
+<p>Rexburg, ID</p>
+</div>
+<div style="color:gray;width:75%">
+<p><strong>Academic Skills Coach</strong></p>
+<ul>
+<li><p>Guiding undergraduate student-clients through goal setting and
+execution processes for semester length periods in a one on one
+setting</p></li>
+<li><p>Studying and applying principles for organizational and personal
+development materials from sources such as Franklin-Covey, the Arbinger
+Institute etc.</p></li>
+<li><p>Applying learning theory in individualized settings for personal
+and academic development</p></li>
+</ul>
+<p><strong>Team Leader</strong></p>
+<ul>
+<li><p>Instructing supervised employees biweekly in group and
+individualized settings regarding methods of job performance and
+enhancement</p></li>
+<li><p>Overseeing and approving time sheets for supervised employees on
+a weekly basis</p></li>
+<li><p>Generating organization-wide employee evaluations based on
+student-client feedback through RStudio, a statistical analysis and
+visualization software</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div style="clear:both;">
+
+</div>
+<div style="float:left">
+<p><br /></p>
+<div id="northway-academy" class="section level3">
+<h3>Northway Academy</h3>
+<div style="float:right;color:gray;text-align:right">
+<p>May - September 2024</p>
+<p>Elk River, MN</p>
+</div>
+<div style="color:gray;width:75%">
+<p><strong>Behavior Technician</strong></p>
+<ul>
+<li><p>Provided applied behavioral analysis therapy to individuals with
+autism spectrum disorder 8 to 17 years of age in a clinical setting
+under direction of a board certified behavior analyst</p></li>
+<li><p>Instructed high functioning school aged clients in relevant
+reading, writing, and mathematics to supplement academic abilities to
+one day attend school full time</p></li>
+<li><p>Implemented individualized guidance with clients in daily living
+skills to establish independence</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div style="clear:both;">
+
+</div>
+<div style="float:left">
+<p><br /></p>
+<div id="cj-relocation-services" class="section level3">
+<h3>C&amp;J Relocation Services</h3>
+<div style="float:right;color:gray;text-align:right">
+<p>June - October 2021</p>
+<p>Cambridge, MN</p>
+</div>
+<div style="color:gray;width:75%">
+<p><strong>Crew Member</strong></p>
+<ul>
+<li><p>Coordinated efforts to prepare a trailer to safely transport
+client belongings up to 100 miles</p></li>
+<li><p>Packed loose goods into small, medium, and large boxes using
+packing paper, shrink wrap, and other methods to ensure 100% safety
+during transportation</p></li>
+<li><p>Transported client belongings to and from trailer using straps,
+harnesses, and hand trucks to ensure 100% safety during
+handling</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div style="clear:both;">
+
+</div>
+</div>
+<div id="skills" class="section level2">
+<h2>Skills</h2>
+<p><br /></p>
+<p><strong>RStudio</strong></p>
+<ul>
+<li><p>Data Visualization with GGPlot2 and Plotly</p></li>
+<li><p>Data wrangling with DPLYR and Base R functions</p></li>
+<li><p>Generating Statistical Analyses</p></li>
+<li><p>Managing a github pages website from within RStudio</p></li>
+</ul>
+</div>
+<div id="volunteer-experience" class="section level2">
+<h2>Volunteer Experience</h2>
+<p><br /></p>
+<div
+id="full-time-missionary-the-church-of-jesus-christ-of-latter-day-saints"
+class="section level3">
+<h3>Full Time Missionary: The Church of Jesus Christ of Latter-day
+Saints</h3>
+<div style="float:right;color:gray;text-align:right">
+<p>October 2021 - October 2023</p>
+<p>Northern Utah</p>
+</div>
+<div style="color:gray;width:75%">
+<ul>
+<li><p>Acted as an ordained minister, specializing in teaching from
+scriptures and supporting individual growth through 20 to 25 teaching
+appointments per week</p></li>
+<li><p>Offering humanitarian aid through service at non-profit welfare
+organizations and personalized service projects at least once a
+week</p></li>
+<li><p>Supervised volunteer efforts by analyzing teams’ key indicators
+of performance and setting goals to optimize efforts</p></li>
+<li><p>Counseling with volunteer and local ecclesiastical leaders on a
+weekly basis in order to improve effectiveness and performance</p></li>
+</ul>
+</div>
+</div>
+<div style="clear:both;">
+
+</div>
+<!-- TEMPLATE FOR NEW SECTIONS
+
+
+<div style="float:left">
+
+### Name of the Section 
+
+<br />
+
+<div style="color:gray">
+
+--- Main Body Text (left aligned) ---
+
+
+
+
+
+
+--- End Main Body Text ---
+
+</div>
+
+</div>
+
+<div style="float:right;color:gray;text-align:right">
+
+<br />
+
+--- Informative Text (right aligned)---
+
+
+
+--- End Informative Text ---
+
+</div>
+
+<div style="clear:both;"></div>
+
+-->
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
