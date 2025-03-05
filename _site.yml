@@ -8,6 +8,8 @@ navbar:
       menu:
         - text: "Analyzing Joseph Smith's Polygamy"
           href: Polyg.html
+        - text: "Organizational Aanalysis App"
+          href: ./org_a_shiny/index.html
 
 #  left:
 #    - text: "name of menu"
